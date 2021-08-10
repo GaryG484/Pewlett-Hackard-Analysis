@@ -130,3 +130,14 @@ INTO mentorship_eligibility
 FROM emp_and_dep_emp_and_title_clean
 ORDER BY emp_no;
 
+SELECT * FROM emp_info 
+
+--1st additional query
+SELECT COUNT(me.first_name)
+FROM mentorship_eligibility  as me
+
+--2nd additional query
+SELECT COUNT(emp_info.emp_no)
+FROM emp_info
+
+
